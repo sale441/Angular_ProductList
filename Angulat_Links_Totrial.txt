@@ -17,3 +17,4 @@ https://angular.io/tutorial  // WICHTIG WICHTIG
 https://www.youtube.com/watch?v=XvemczQn56U   // Youtobe 
 
 https://blog.ordix.de/technologien/single-page-application-framework-angular-2  // gute seite
+Hallo ich bin aus dem Git
