@@ -1,0 +1,7 @@
+<h1>Product Details!</h1>
+<div *ngIf="product">
+<h1 style="color: #1976d2;">{{product.name}}</h1>
+<h3>description :-  <br>{{product.description}}</h3>
+<h2 style="color: brown;">Price : <br>{{ product.price |currency}}</h2>
+</div>
+<button (click) = "productAddToCart(product)">In den Warenkorp</button>

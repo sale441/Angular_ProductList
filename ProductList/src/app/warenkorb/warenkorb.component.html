@@ -1,0 +1,31 @@
+<h1>warenkorb!</h1>
+<div *ngIf="getWarenKorpInhalt().length > 0">
+  <h3><a [routerLink] = "['/versandkosten']">Versandkosten</a></h3>
+
+  <ul class="cart-item" *ngFor="let item of getWarenKorpInhalt(); index as Id">
+
+    <a [routerLink]="['/p',  Id]">
+      <li>
+        <h2 style="margin-bottom: 0px;margin-top: 0px;color: #1976d2;">Product : {{item.name}}</h2>
+        <h3 style="margin-bottom: 0px;margin-top: 0px;color: #1976d2;">Price : &nbsp;{{item.price |currency}}</h3>
+      </li>
+    </a>
+  </ul>
+  <form [formGroup] = "checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+    <label for="Name">Name:</label>
+    <input id="name" type="text" formControlName = "Name">
+
+    <label for="Adresse">Adresse:</label>
+    <input id="Adresse" type="text" formControlName="Adresse">
+
+    <label for="Tel.Nr">Tel.Nr:</label>
+    <input id="Tel.Nr" type="text" formControlName="Tel.Nr">
+
+    <label for="E-Mail">E-Mail:</label>
+    <input id="E-Mail" type="text" formControlName="E-Mail"><br>
+
+    <button id="kaufen" type="submit">Kaufen</button>
+
+  </form>
+
+</div>
