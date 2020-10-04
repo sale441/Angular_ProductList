@@ -22,3 +22,7 @@ hi
 gi
 hizder
 
+https://blog.ordix.de/technologien/single-page-application-framework-angular-2  // gute seite
+Hallo ich bin aus dem Git
+
+
