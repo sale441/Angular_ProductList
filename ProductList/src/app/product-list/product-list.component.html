@@ -10,7 +10,7 @@
 <button  style="font-size:18px" (click)="share()">
   Share <i style="padding-left: 1em;" class="fa fa-share-alt"></i>
 </button>
-<app-product-alerts [product]= "item" (notify)="onNotify()"></app-product-alerts>
+<app-product-alerts [product]= "item" (notify)="onNotify($event)"></app-product-alerts>
 </div>
 
 

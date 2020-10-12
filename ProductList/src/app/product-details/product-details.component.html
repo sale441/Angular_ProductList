@@ -5,3 +5,12 @@
 <h2 style="color: brown;">Price : <br>{{ product.price |currency}}</h2>
 </div>
 <button (click) = "productAddToCart(product)">In den Warenkorp</button>
+<br>
+<hr>
+<input  (keyup)="onKey($event)" value="{{values}}">
+<br>
+<input #box >
+<button (click)="update(box.value)" style="margin-left: 5px;">Add</button>
+<ul *ngFor="let item of valueListe">
+  <li>{{item}}</li>
+</ul>
